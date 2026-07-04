@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Anina1999/JS-Back-End-Movie-Magic-May-2026/issues"
   },
-  "homepage": "https://github.com/Anina1999/JS-Back-End-Movie-Magic-May-2026#readme"
+  "homepage": "https://github.com/Anina1999/JS-Back-End-Movie-Magic-May-2026#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
