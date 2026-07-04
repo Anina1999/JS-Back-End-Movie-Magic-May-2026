@@ -6,7 +6,7 @@
  - [x] Initialize Project
  - [x] Add Express Server `npm i express`
  - [x] Config debugging and dev script `Node.JS: Launch Via Npm`
- - [ ] Add Workshop Resources
+ - [x] Add Workshop Resources
  - [ ] Setup Handlebars `npm i express-handlebars`
  - [ ] Setup static files
  - [ ] Render Home Page
