@@ -5,7 +5,7 @@
 ### Setup
  - [x] Initialize Project
  - [x] Add Express Server `npm i express`
- - [ ] Config debugging and dev script
+ - [x] Config debugging and dev script `Node.JS: Launch Via Npm`
  - [ ] Add Workshop Resources
  - [ ] Setup Handlebars `npm i express-handlebars`
  - [ ] Setup static files
