@@ -13,7 +13,7 @@
  - [x] Render About Page
  - [x] Add Layout
 ### Architecture and dynamic rendering
- - [ ] Add home controller
+ - [x] Add home controller
  - [ ] Add movie data layer
  - [ ] Add movie service
  - [ ] Render single movie on home page
