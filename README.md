@@ -15,7 +15,7 @@
 ### Architecture and dynamic rendering
  - [x] Add home controller
  - [x] Add movie data layer
- - [ ] Add movie service
+ - [x] Add movie service
  - [ ] Render single movie on home page
  - [ ] Render all movies on home page
  - [ ] Show no movies screen
