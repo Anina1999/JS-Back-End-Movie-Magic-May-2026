@@ -4,8 +4,13 @@ function getAll() {
     return movieRepository.getAll();
 }
 
+function create(movieData) {
+    return movieRepository.create(movieData);
+}
+
 const movieService = {
-    getAll
+    getAll,
+    create,
 }
 
 export default movieService;
