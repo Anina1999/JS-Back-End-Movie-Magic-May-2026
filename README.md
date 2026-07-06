@@ -30,9 +30,9 @@
    - [x] Add service
    - [x] Add repository
  - [x] Redirect after creation
- - [ ] Add unique if for each cerated movie
+ - [x] Add unique if for each cerated movie
 ### Details
- - [ ] Add navigation button for detail page
+ - [x] Add navigation button for detail page
  - [ ] Add route with param for details page 
  - [ ] GetOne movie from service
  - [ ] Find movie by id from repository
