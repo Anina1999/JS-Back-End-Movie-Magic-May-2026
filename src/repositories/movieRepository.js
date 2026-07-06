@@ -14,12 +14,24 @@ async function readDb(collection) {
 
 async function writeDb(db) {
     const content = JSON.stringify(db, null, 2);
-    fs.writeFile('./src/db.json', content, { encoding: 'utf-8' });
+    await fs.writeFile('./src/db.json', content, { encoding: 'utf-8' });
 
 }
 
-async function getAll() {
-    const movies = await readDb('movies');
+async function getAll(filter = {}) {
+    let movies = await readDb('movies');
+
+    if (filter.search) {
+        movies = movies.filter(m => m.title.toLowerCase().includes(filter.search));
+    }
+
+    if (filter.genre) {
+        movies = movies.filter(m => m.genre.toLowerCase() === filter.genre.toLowerCase());
+    }
+
+    if (filter.year) {
+        movies = movies.filter(m => m.year === filter.year);
+    }
 
     return movies;
 }

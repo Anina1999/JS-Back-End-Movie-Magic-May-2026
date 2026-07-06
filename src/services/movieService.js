@@ -1,7 +1,7 @@
 import movieRepository from "../repositories/movieRepository.js";
 
-function getAll() {
-    return movieRepository.getAll();
+function getAll(filter = {}) {
+    return movieRepository.getAll(filter);
 }
 
 function getById(movieId) {
