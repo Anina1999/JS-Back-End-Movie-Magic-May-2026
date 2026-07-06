@@ -18,10 +18,10 @@
  - [x] Add movie service
  - [x] Render single movie on home page
  - [x] Render all movies on home page
- - [ ] Show no movies screen
+ - [x] Show no movies screen
 ### Create Movie
- - [ ] Add Movie Controller
- - [ ] Show create movie page
+ - [x] Add Movie Controller
+ - [x] Show create movie page
  - [ ] Add routes
  - [ ] Add 404 page
  - [ ] Ready body data
