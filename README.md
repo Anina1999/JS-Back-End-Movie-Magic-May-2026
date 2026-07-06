@@ -17,7 +17,7 @@
  - [x] Add movie data layer
  - [x] Add movie service
  - [x] Render single movie on home page
- - [ ] Render all movies on home page
+ - [x] Render all movies on home page
  - [ ] Show no movies screen
 ### Create Movie
  - [ ] Add Movie Controller
