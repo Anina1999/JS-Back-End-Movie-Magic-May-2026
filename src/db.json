@@ -32,16 +32,6 @@
       "year": 1990,
       "rating": 7.7,
       "category": "Movie"
-    },
-    {
-      "title": "asdasd",
-      "category": "short-film",
-      "genre": "sadsdsa",
-      "director": "asdsdas",
-      "year": "1234",
-      "imageUrl": "asdasd",
-      "rating": "asdda",
-      "description": "asdad"
     }
   ]
 }
