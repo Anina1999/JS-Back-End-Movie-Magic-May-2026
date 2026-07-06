@@ -24,7 +24,7 @@
  - [x] Show create movie page
  - [x] Add routes
  - [x] Add 404 page
- - [ ] Ready body data
+ - [x] Ready body data
  - [ ] Create movie
    - [ ] Add action
    - [ ] Add service
