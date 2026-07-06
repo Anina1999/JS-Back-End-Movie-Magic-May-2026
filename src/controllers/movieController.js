@@ -26,7 +26,10 @@ movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getById(movieId);
 
-    res.render('movies/details', { movie, pageTitle: 'Movie Details' });
+    const rating = Math.floor(movie.rating);
+    const ratingStars = '&#x2605;'.repeat(movie.rating);    
+
+    res.render('movies/details', { movie, pageTitle: 'Movie Details', ratingStars });
 });
 
 export default movieController;
