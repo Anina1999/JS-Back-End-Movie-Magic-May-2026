@@ -23,7 +23,7 @@
  - [x] Add Movie Controller
  - [x] Show create movie page
  - [x] Add routes
- - [ ] Add 404 page
+ - [x] Add 404 page
  - [ ] Ready body data
  - [ ] Create movie
    - [ ] Add action
