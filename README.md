@@ -47,9 +47,9 @@
    - [x] By title 
  - [x] Remember search words
 ### Bonuses
- - [ ] Dynamic page title (basic)
+ - [x] Dynamic page title (basic)
  - [ ] Rating (temp solution)
- - [ ] File Persistance
+ - [x] File Persistance
 
 ## Workshop 2 - PostgreSQL and Prisma
 
