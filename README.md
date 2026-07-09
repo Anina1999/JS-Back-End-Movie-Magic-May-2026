@@ -79,7 +79,7 @@
 
 ### Artist
  - [x] Add resources
- - [ ] Add artist model
+ - [x] Add artist model
  - [ ] Add artist view
  - [ ] Add artist controller
  - [ ] Add to routes
