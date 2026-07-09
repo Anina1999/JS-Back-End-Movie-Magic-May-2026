@@ -86,8 +86,8 @@
  - [x] Add header link
  - [x] Modify create form
  - [x] Add artist post action
- - [ ] Add artist service
- - [ ] Add artist repository
+ - [x] Add artist service
+ - [x] Add artist repository
 
 ### Attach Artist to Movie
  - [ ] Add relation between artists and movies (Implicit many-to-many)

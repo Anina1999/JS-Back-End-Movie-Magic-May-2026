@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import artistService from '../services/artistService.js';
 
 const artistController = Router();
 
@@ -6,9 +7,9 @@ artistController.get('/create', (req, res) => {
     res.render('artists/create');
 })
 
-artistController.post('/create', (req, res) => {
+artistController.post('/create', async (req, res) => {
     const artistData = req.body;
-    console.log('Artist Data:', artistData); // Log the received data for debugging
+    await artistService.create(artistData);
 
     res.redirect('/');
 })
