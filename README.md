@@ -72,9 +72,9 @@
 
 ### Refactor Movies
  - [x] Remove uuid
- - [ ] Create Movie
- - [ ] Read all movies
- - [ ] Movie details page 
+ - [x] Create Movie
+ - [x] Read all movies
+ - [x] Movie details page 
  - [ ] Remove file persistance related code
 
 ### Artist
