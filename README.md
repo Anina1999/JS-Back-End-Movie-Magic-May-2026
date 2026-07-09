@@ -75,10 +75,10 @@
  - [x] Create Movie
  - [x] Read all movies
  - [x] Movie details page 
- - [ ] Remove file persistance related code
+ - [x] Remove file persistance related code
 
 ### Artist
- - [ ] Add resources
+ - [x] Add resources
  - [ ] Add artist model
  - [ ] Add artist view
  - [ ] Add artist controller
