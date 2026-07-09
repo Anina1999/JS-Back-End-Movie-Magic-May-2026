@@ -64,7 +64,7 @@
  - [x] Initialize prisma `npx prisma init --output ../generated/prisma`
  - [x] Add database_url env variable
  - [x] Generate first client `npx prisma generate`
- - [ ] Instantiate prisma client
+ - [x] Instantiate prisma client
 
 ### Setup models
  - [x] Add Movie model
