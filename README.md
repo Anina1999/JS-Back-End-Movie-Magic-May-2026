@@ -82,10 +82,10 @@
  - [x] Add artist model
  - [x] Add artist view
  - [x] Add artist controller
- - [ ] Add to routes
- - [ ] Add header link
- - [ ] Modify create form
- - [ ] Add artist post action
+ - [x] Add to routes
+ - [x] Add header link
+ - [x] Modify create form
+ - [x] Add artist post action
  - [ ] Add artist service
  - [ ] Add artist repository
 
