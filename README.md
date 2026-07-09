@@ -80,8 +80,8 @@
 ### Artist
  - [x] Add resources
  - [x] Add artist model
- - [ ] Add artist view
- - [ ] Add artist controller
+ - [x] Add artist view
+ - [x] Add artist controller
  - [ ] Add to routes
  - [ ] Add header link
  - [ ] Modify create form
