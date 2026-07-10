@@ -94,7 +94,7 @@
  - [x] Add page view
  - [x] Add dynamic data
  - [x] Populate artist select
- - [ ] Attach function
+ - [x] Attach artist to movie function
 
 ### Show Artists on Details Page
  - [ ] Modify details view
