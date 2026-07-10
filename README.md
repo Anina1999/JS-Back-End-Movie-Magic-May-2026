@@ -98,7 +98,7 @@
 
 ### Show Artists on Details Page
  - [x] Modify details view
- - [ ] Link to attach page
+ - [x] Link to attach page
  - [ ] Show dynamic cast
 
 ### Bonuses
