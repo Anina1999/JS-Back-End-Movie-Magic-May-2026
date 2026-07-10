@@ -97,7 +97,7 @@
  - [x] Attach artist to movie function
 
 ### Show Artists on Details Page
- - [ ] Modify details view
+ - [x] Modify details view
  - [ ] Link to attach page
  - [ ] Show dynamic cast
 
