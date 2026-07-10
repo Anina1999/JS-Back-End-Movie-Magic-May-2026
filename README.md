@@ -90,7 +90,7 @@
  - [x] Add artist repository
 
 ### Attach Artist to Movie
- - [ ] Add relation between artists and movies (Implicit many-to-many)
+ - [x] Add relation between artists and movies (Implicit many-to-many)
  - [ ] Add page view
  - [ ] Add dynamic data
  - [ ] Populate artist select
