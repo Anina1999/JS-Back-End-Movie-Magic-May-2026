@@ -93,7 +93,7 @@
  - [x] Add relation between artists and movies (Implicit many-to-many)
  - [x] Add page view
  - [x] Add dynamic data
- - [ ] Populate artist select
+ - [x] Populate artist select
  - [ ] Attach function
 
 ### Show Artists on Details Page
