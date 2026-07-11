@@ -1,7 +1,7 @@
 import artistRepository from "../repositories/artistRepository.js";
 
-export function getAll() {
-    return artistRepository.getAll();
+export function getAll(filter = {}) {
+    return artistRepository.getAll(filter);
 }
 
 export function create(artistData) {
