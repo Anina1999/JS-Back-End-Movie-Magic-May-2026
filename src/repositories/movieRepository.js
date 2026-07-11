@@ -2,19 +2,19 @@ import fs from 'fs/promises';
 import { prisma } from '../lib/prisma.js';
 
 async function getAll(filter = {}) {
-    let movies = await prisma.movie.findMany();
-
-    if (filter.search) {
-        movies = movies.filter(m => m.title.toLowerCase().includes(filter.search));
-    }
-
-    if (filter.genre) {
-        movies = movies.filter(m => m.genre.toLowerCase() === filter.genre.toLowerCase());
-    }
-
-    if (filter.year) {
-        movies = movies.filter(m => m.year === filter.year);
-    }
+    let movies = await prisma.movie.findMany({
+        where: {
+            year: filter.year || undefined,
+            genre: {
+                equals: filter.genre || undefined,
+                mode: 'insensitive'
+            },
+            title: {
+                contains: filter.search,
+                mode: 'insensitive'
+            }
+        }
+    });
 
     return movies;
 }
