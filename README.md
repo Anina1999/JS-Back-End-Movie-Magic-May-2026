@@ -113,8 +113,8 @@
  - [x] Add resources
 
 ### Register
- - [ ] Add auth controller
- - [ ] Add register page
+ - [x] Add auth controller
+ - [x] Add register page
  - [ ] Add register post action
  - [ ] Add service
  - [ ] Add repository
