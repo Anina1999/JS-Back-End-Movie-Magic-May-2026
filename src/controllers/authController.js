@@ -11,11 +11,18 @@ authController.post('/register', async (req, res) => {
     const { email, password, repeatPassword } = req.body;
 
     await authService.register({ email, password, repeatPassword });
-    res.redirect('/');
+    res.redirect('/auth/login');
 });
 
 authController.get('/login', (req, res) => {
     res.render('auth/login');
+});
+
+authController.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+    console.log('Login attempt:', email, password);
+    
+    res.redirect('/');
 });
 
 export default authController;
