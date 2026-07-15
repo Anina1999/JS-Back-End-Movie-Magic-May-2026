@@ -119,10 +119,10 @@
  - [x] Add service
  - [x] Add repository
  - [x] Add model
- - [ ] Hash password `npm i bcrypt`
+ - [x] Hash password `npm i bcrypt`
 
 ### Login
- - [ ] Add login page
+ - [x] Add login page
  - [ ] Add login post action
  - [ ] Add login service method
  - [ ] Add findByEmail repository method
