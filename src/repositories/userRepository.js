@@ -9,8 +9,17 @@ export async function create(userData) {
     });
 };
 
+export async function findByEmail(email) {
+    const user = await prisma.user.findUnique({
+        where: { email } 
+    });
+
+    return user;
+}
+
 const userRepository = {
     create,
+    findByEmail,
 };
 
 export default userRepository;
