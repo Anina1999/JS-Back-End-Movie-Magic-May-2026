@@ -127,7 +127,7 @@
  - [x] Add login service method
  - [x] Add findByEmail repository method
  - [x] Validate password
- - [ ] Issue JWT token `npm i jsonwebtoken`
+ - [x] Issue JWT token `npm i jsonwebtoken`
  - [ ] Return token in cookie
 
 ### Logout
