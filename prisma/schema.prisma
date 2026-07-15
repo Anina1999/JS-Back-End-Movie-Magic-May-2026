@@ -36,11 +36,20 @@ model Artist {
   age       Int
   born      String
   imageUrl  String
-  bio       String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   movies Movie[]
 
   @@map("artists")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
 }
