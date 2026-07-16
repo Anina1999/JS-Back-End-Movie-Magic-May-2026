@@ -23,9 +23,13 @@
                                 <p class="card-category">Category: {{movie.category}}</p>
                         </div>
 
+                        {{#if isOwner}}
                         <div>
                             <a href="/movies/{{movie.id}}/attach" class="details">Attach</a>
+                            <a href="/movies/{{movie.id}}/edit" class="details">Edit</a>
+                            <a href="/movies/{{movie.id}}/delete" class="details">Delete</a>
                         </div>
+                        {{/if}}
                     </div>
                     <div class="card_right">
                         <img src="{{movie.imageUrl}}" alt="{{movie.title}}">
