@@ -138,8 +138,8 @@
  - [x] Create auth middleware
  - [x] Setup cookie parser
  - [x] Validate token
- - [ ] Add isAuthenticated guard
- - [ ] Add isGuest guard
+ - [x] Add isAuthenticated guard
+ - [x] Add isGuest guard
  
 ### Edit and Delete Movies
  - [ ] Add user movies relation

@@ -11,8 +11,24 @@ export function authMiddleware(req, res, next) {
         const decodedToken = jwt.verify(token, 'SECRET');
         req.user = decodedToken;
     } catch (err) { 
-        console.error('Invalid token:', err);
-        res.status(401).send('Unauthorized: Invalid token');  
+        res.clearCookie('auth');
+        res.redirect('/auth/login'); 
+    }
+
+    next();
+}
+
+export function isAuth(req, res, next) {
+    if (!req.user) {
+        return res.redirect('/auth/login');
+    }
+
+    next();
+}
+
+export function isGuest(req, res, next) {
+    if (req.user) {
+        return res.redirect('/');
     }
 
     next();
