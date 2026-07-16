@@ -131,8 +131,8 @@
  - [x] Return token in cookie
 
 ### Logout
- - [ ] Add logout action
- - [ ] Use logout on invalid token
+ - [x] Add logout action
+ - [x] Use logout on invalid token
 
 ### Authentication & Authorization
  - [x] Create auth middleware
@@ -142,8 +142,8 @@
  - [x] Add isGuest guard
  
 ### Edit and Delete Movies
- - [ ] Add user movies relation
- - [ ] Add owner on movie create
+ - [x] Add user movies relation
+ - [x] Add owner on movie create
  - [ ] Show dynamic details buttons
  - [ ] Implement delete button
  - [ ] Add static edit page
