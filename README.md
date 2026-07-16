@@ -128,16 +128,16 @@
  - [x] Add findByEmail repository method
  - [x] Validate password
  - [x] Issue JWT token `npm i jsonwebtoken`
- - [ ] Return token in cookie
+ - [x] Return token in cookie
 
 ### Logout
  - [ ] Add logout action
  - [ ] Use logout on invalid token
 
 ### Authentication & Authorization
- - [ ] Create auth middleware
- - [ ] Setup cookie parser
- - [ ] Validate token
+ - [x] Create auth middleware
+ - [x] Setup cookie parser
+ - [x] Validate token
  - [ ] Add isAuthenticated guard
  - [ ] Add isGuest guard
  
