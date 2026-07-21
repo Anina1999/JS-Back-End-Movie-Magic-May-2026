@@ -7,6 +7,8 @@ export async function create(userData) {
             password: userData.password,   
         }
     });
+
+    return result;
 };
 
 export async function findByEmail(email) {

@@ -151,12 +151,12 @@
  - [x] Implement edit on post
 
 ### Dynamic Navigation
- - [ ] Show dynamic navigation based on user session
+ - [x] Show dynamic navigation based on user session
 
 ### Bonuses
  - [ ] Validate repeat password
- - [ ] Automatic login on register
- - [ ] Fix secret
+ - [x] Automatic login on register
+ - [x] Fix secret
  - [ ] Fix select on edit
  - [ ] Make token generation async
  - [ ] Fix rating

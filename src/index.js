@@ -3,6 +3,7 @@ import { engine } from 'express-handlebars';
 import routes from './routes.js'
 import { authMiddleware } from './middlewares/authMiddleware.js';
 import cookieParser from 'cookie-parser';
+import "dotenv/config";
 
 const app = express();
 //setup handlebars
