@@ -157,6 +157,6 @@
  - [ ] Validate repeat password
  - [x] Automatic login on register
  - [x] Fix secret
- - [ ] Fix select on edit
+ - [x] Fix select on edit
  - [ ] Make token generation async
  - [ ] Fix rating
