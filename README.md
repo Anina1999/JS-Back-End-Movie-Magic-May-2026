@@ -146,8 +146,8 @@
  - [x] Add owner on movie create
  - [x] Show dynamic details buttons
  - [x] Implement delete button
- - [ ] Add static edit page
- - [ ] Add dynamic values to edit page
+ - [x] Add static edit page
+ - [x] Add dynamic values to edit page
  - [ ] Implement edit on post
 
 ### Dynamic Navigation
