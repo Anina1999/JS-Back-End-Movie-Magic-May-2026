@@ -154,7 +154,6 @@
  - [x] Show dynamic navigation based on user session
 
 ### Bonuses
- - [ ] Validate repeat password
  - [x] Automatic login on register
  - [x] Fix secret
  - [x] Fix select on edit
@@ -166,8 +165,8 @@
  - [x] Add resources
 
 ### Movie validation and error handling
- - [ ] Create Movie Scheme with Zod
- - [ ] Catch, extract and return errors
+ - [x] Create Movie Schema with Zod
+ - [x] Catch, extract and return errors
  - [ ] Populate already filled data
  - [ ] Populate select category
  - [ ] Show single error
