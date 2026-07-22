@@ -57,7 +57,7 @@ movieController.post('/:movieId/attach', isAuth, async (req, res) => {
 
 movieController.get('/:movieId/delete', isAuth, async (req, res) => {
     const movieId = Number(req.params.movieId);
-    const userId = req.user.id;
+    const userId = req?.user?.id;
 
     await movieService.remove(movieId, userId);
 
