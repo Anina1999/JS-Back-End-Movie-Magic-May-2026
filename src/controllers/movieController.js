@@ -35,7 +35,7 @@ movieController.post('/create', isAuth, async (req, res) => {
 
             const categoryOptions = prepareCategoryViewData(newMovie);
 
-            res.status(400).render('movies/create', { movie: req.body, errors, categoryOptions, pageTitle: 'Create Movie' })
+            res.status(400).render('movies/create', { movie: req.body, error: Object.values(errors).flat().at(0), categoryOptions, pageTitle: 'Create Movie' })
         }
     }
 })

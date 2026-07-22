@@ -169,7 +169,7 @@
  - [x] Catch, extract and return errors
  - [x] Populate already filled data
  - [x] Populate select category
- - [ ] Show single error
+ - [x] Show single error
  - [ ] Validate enum (movie category)
  - [ ] Show multiple errors
  - [ ] Get prisma errors
