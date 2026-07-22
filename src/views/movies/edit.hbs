@@ -12,13 +12,7 @@
                                 <input type="text" class="inputFields" id="title" name="title" value="{{movie.title}}" />
                             </li>
                             <li>
-                                <label for="category">Category:</label>
-                                <select id="category" class="inputFields" name="category">
-                                    <option value="">Select Category</option>
-                                    {{#each categoryOptions}}
-                                    <option value="{{value}}" {{isSelected}}>{{label}}</option>
-                                    {{/each}}
-                                </select>
+                                {{> categorySelect }}
                             </li>
                             <li>
                                 <label for="genre">Genre:</label>

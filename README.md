@@ -168,7 +168,7 @@
  - [x] Create Movie Schema with Zod
  - [x] Catch, extract and return errors
  - [x] Populate already filled data
- - [ ] Populate select category
+ - [x] Populate select category
  - [ ] Show single error
  - [ ] Validate enum (movie category)
  - [ ] Show multiple errors

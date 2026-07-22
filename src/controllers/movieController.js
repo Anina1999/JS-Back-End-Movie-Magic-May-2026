@@ -15,7 +15,9 @@ movieController.get('/search', async (req, res) => {
 })
 
 movieController.get('/create', isAuth, (req, res) => {
-    res.render('movies/create', { pageTitle: 'Create Movie' });
+    const categoryOptions = prepareCategoryViewData({});
+
+    res.render('movies/create', { pageTitle: 'Create Movie', categoryOptions });
 });
 
 movieController.post('/create', isAuth, async (req, res) => {
@@ -30,9 +32,10 @@ movieController.post('/create', isAuth, async (req, res) => {
     } catch (error) {
         if (error instanceof z.ZodError) {
             const errors = z.flattenError(error).fieldErrors;
-            console.log(errors);
 
-            res.status(400).render('movies/create', { movie: req.body, errors, pageTitle: 'Create Movie' })
+            const categoryOptions = prepareCategoryViewData(newMovie);
+
+            res.status(400).render('movies/create', { movie: req.body, errors, categoryOptions, pageTitle: 'Create Movie' })
         }
     }
 })

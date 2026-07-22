@@ -12,15 +12,7 @@
                                 <input type="text" class="inputFields" id="title" name="title" value="{{movie.title}}" />
                             </li>
                             <li>
-                                <label for="category">Category:</label>
-                                <select id="category" class="inputFields" name="category">
-                                    <option value="">Select Category</option>
-                                    <option value="tv-show">TV Show</option>
-                                    <option value="animation">Animation</option>
-                                    <option value="movie">Movie</option>
-                                    <option value="documentary">Documentary</option>
-                                    <option value="short-film">Short Film</option>
-                                </select>
+                               {{> categorySelect }}
                             </li>
                             <li>
                                 <label for="genre">Genre:</label>
