@@ -170,6 +170,7 @@
  - [x] Populate already filled data
  - [x] Populate select category
  - [x] Show single error
+ - [x] Show multi errors
  - [ ] Validate enum (movie category)
  - [ ] Show multiple errors
  - [ ] Get prisma errors

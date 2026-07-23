@@ -4,6 +4,9 @@ export const createMovieSchema = z.object({
     title: z.string()
         .min(5, { message: "Title must be at least 5 characters long" })
         .regex(/^[A-Za-z0-9 ]+$/, { message: "Title can only contain letters, numbers, and spaces" }),
+    category: z.enum(
+        ['tv-show', 'animation', 'movie', 'documentary', 'short-film'], 
+        { message: "You must choose category"}),
     genre: z.string()
         .min(5, { message: "Genre must be at least 5 characters long" })
         .regex(/^[A-Za-z0-9 ]+$/, { message: "Genre can only contain letters, numbers, and spaces" }),
