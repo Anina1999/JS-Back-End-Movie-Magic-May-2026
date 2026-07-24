@@ -1,10 +1,12 @@
 import * as z from 'zod';
+import bcrypt from 'bcrypt';
 import userRepository from '../repositories/userRepository.js';
 
 export const createUserSchema = z.object({
     email: z.string()
         .email({ message: 'Invalid email address'})
         .min(10, { message: 'Email must be at least 10 characters long'})
+        .trim()
         .refine(async (value) => {
             const result = await userRepository.findByEmail(value);
             return !result;
@@ -16,4 +18,10 @@ export const createUserSchema = z.object({
 }).refine((data) => data.password === data.repeatPassword, {
     message: 'Password do not match',
     path: ['repeatPassword'],
-}).transform(({repeatPassword, ...data}) => data)
+}).transform(async ({repeatPassword, ...data}) => {
+    const hashedPassword = await bcrypt.hashSync(data.password, 10);
+    return {
+        ...data,
+        password: hashedPassword,
+    };
+})
