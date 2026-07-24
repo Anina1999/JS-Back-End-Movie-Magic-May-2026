@@ -15,7 +15,7 @@ movieController.get('/search', async (req, res) => {
 })
 
 movieController.get('/create', isAuth, (req, res) => {
-    const categoryOptions = prepareCategoryViewData({});
+    const categoryOptions = prepareCategoryViewData();
 
     res.render('movies/create', { pageTitle: 'Create Movie', categoryOptions });
 });
@@ -30,15 +30,27 @@ movieController.post('/create', isAuth, async (req, res) => {
         await movieService.create(movieData, userId);
         res.redirect('/');
     } catch (error) {
-        if (error instanceof z.ZodError) {
-            const errors = z.flattenError(error).fieldErrors;
+        let errors = {};
+        let err = null;
+        const categoryOptions = prepareCategoryViewData(newMovie);
 
-            const categoryOptions = prepareCategoryViewData(newMovie);
-
-            res.status(400).render('movies/create', { movie: req.body, errors, categoryOptions, pageTitle: 'Create Movie' })
+        if (error.name === 'ZodError') {
+            errors = z.flattenError(error).fieldErrors;    
+              
+        } else if (error.name === 'PrismaClientKnownRequestError') {
+            switch (error.code) {
+                case 'P2002':
+                console.log(error.message); 
+                errors = { title: ['Title must be unique']};
+                break;
+            }
+        } else {
+            err = error.message || 'An unexpected error occurred';
         }
-    }
-})
+
+             res.status(400).render('movies/create', { movie: req.body, error: err, errors, categoryOptions, pageTitle: 'Create Movie' });
+        }
+    })
 
 movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
@@ -79,7 +91,7 @@ movieController.get('/:movieId/delete', isAuth, async (req, res) => {
     res.redirect('/');
 })
 
-function prepareCategoryViewData(movie) {
+function prepareCategoryViewData(movie = {}) {
     const categories = ['TV Show', 'Animation', 'Movie', 'Documentary', 'Short Film'];
     const categoryOptions = categories.map(c => {
         const value = c.toLowerCase().replaceAll(' ', '-');

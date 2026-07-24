@@ -170,10 +170,9 @@
  - [x] Populate already filled data
  - [x] Populate select category
  - [x] Show single error
- - [x] Show multi errors
- - [ ] Validate enum (movie category)
- - [ ] Show multiple errors
- - [ ] Get prisma errors
+ - [x] Validate enum (movie category)
+ - [x] Show multiple errors
+ - [x] Get prisma errors
 
 ### Artist validation and error handling
  - [ ] Create schema

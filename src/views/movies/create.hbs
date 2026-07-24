@@ -10,41 +10,41 @@
                             <li>
                                 <label for="title">Title:</label>
                                 <input type="text" class="inputFields" id="title" name="title" value="{{movie.title}}" />
-                                {{> showErrors error=errors.title}}
+                                {{> showErrors errors=errors.title}}
                             </li>
                             <li>
                                {{> categorySelect }}
-                               {{> showErrors error=errors.category}}
+                               {{> showErrors errors=errors.category}}
                             </li>
                             <li>
                                 <label for="genre">Genre:</label>
                                 <input type="text" class="inputFields" id="genre" name="genre" value="{{movie.genre}}" />
-                                {{> showErrors error=errors.genre}}
+                                {{> showErrors errors=errors.genre}}
                             </li>
                             <li>
                                 <label for="director">Director:</label>
                                 <input type="text" class="inputFields" id="director" name="director" value="{{movie.director}}" />
-                                {{> showErrors error=errors.director}}
+                                {{> showErrors errors=errors.director}}
                             </li>
                             <li>
                                 <label for="date">Year:</label>
                                 <input type="number" class="inputFields" id="year" name="year" value="{{movie.year}}" />
-                                {{> showErrors error=errors.year}}
+                                {{> showErrors errors=errors.year}}
                             </li>
                             <li>
                                 <label for="image">Movie Poster:</label>
                                 <input type="text" class="inputFields" id="image" name="imageUrl" value="{{movie.imageUrl}}" />
-                                {{> showErrors error=errors.imageUrl}}
+                                {{> showErrors errors=errors.imageUrl}}
                             </li>
                             <li>
                                 <label for="image">Rating:</label>
                                 <input type="text" class="inputFields" id="rating" name="rating" value="{{movie.rating}}" />
-                                {{> showErrors error=errors.rating}}
+                                {{> showErrors errors=errors.rating}}
                             </li>
                             <li>
                                 <label for="description">Description:</label>
                                 <textarea id="description" class="inputFields" name="description" >{{movie.description}}</textarea>
-                                {{> showErrors error=errors.description}}
+                                {{> showErrors errors=errors.description}}
                             </li>
                          
                             <li id="center-btn">
