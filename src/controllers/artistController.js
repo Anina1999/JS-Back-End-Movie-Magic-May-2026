@@ -21,7 +21,7 @@ artistController.post('/create', isAuth, async (req, res) => {
     } catch (err) {
         const error = getErrorMessage(err);
 
-        res.status(400).render('artists/create', { artist: req.body, error, pageTitle: 'Create Artist'});
+        res.status(400).render('artists/create', { artist: req.body, error });
     }
 });
 
