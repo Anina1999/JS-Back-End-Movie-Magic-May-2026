@@ -104,7 +104,7 @@
 ### Bonuses
  - [x] Show filtered artists in attach page
  - [x] Search filter in db
- - [ ] Name in movie (Explicit Many-to-Many)
+ - [x] Name in movie (Explicit Many-to-Many)
  - [ ] Modify service export
 
  ## Workshop 3 - Session and Authentication

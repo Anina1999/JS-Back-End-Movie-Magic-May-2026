@@ -14,11 +14,11 @@ function create(movieData, userId) {
     return movieRepository.create(movieData);
 }
 
-async function attachArtist(movieId, artistId) {
+async function attachArtist(movieId, artistId, character) {
     const movieIdNumber = Number(movieId);
     const artistIdNumber = Number(artistId);
 
-    const result = await movieRepository.attachArtist(movieIdNumber, artistIdNumber);
+    const result = await movieRepository.attachArtist(movieIdNumber, artistIdNumber, character);
     return result;
 }
 
